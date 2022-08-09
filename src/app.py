@@ -1,24 +1,33 @@
 from math import *
+from unicodedata import name
 
-a = 2
-b = 3
-print(a * 5)
-print(str((a * 3) + (a * a)) + " is the result")
-print(abs(a + (-4.5 * a)))
-print(pow(2, 4))
-print(round(min(a, b) * 2 + max(a, b) * 3.5))
-print(floor(1.2))
+a = 3
+b = float(input("Enter a number: "))
 
-message = "\"hellow world\""
-name = "Al"
-print(name + " said: \n" + message)
-print(len(message))
-print(message[0])
-print(message.index("e"))
-print(message.replace("l", "k").upper())
+c = a + b + (a * b) + max(a, b)
+print(pow(c, 2))
 
-print("    .")
-print("   /|")
-print("  / |")
-print(" /  |")
-print("/___|")
+names = ["Vito", "Sonny", "Tom", "Michael"]
+print(names)
+print(len(names))
+print(names[0] + " " + names[1])
+print(names[2:])
+print(names[1:3])
+names[1] = "Fredo"
+print(names)
+names.append("Sonny")
+print(names)
+names.insert(2, "Tessio")
+print(names)
+names.remove("Fredo")
+names.append("Clemenza")
+print(names)
+names.sort()
+print(names)
+names.reverse()
+print(names)
+
+names2 = names.copy()
+names2.insert(0, "Fredo")
+print(names2)
+print(names)
