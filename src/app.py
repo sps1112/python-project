@@ -1,11 +1,14 @@
 from math import *
-from unicodedata import name
 
-a = 3
-b = float(input("Enter a number: "))
-
-c = a + b + (a * b) + max(a, b)
-print(pow(c, 2))
+p1 = (1, 2)
+p2 = (3, 4)
+print(p1)
+print(p2[0])
+print(p2[1])
+p3 = (0.4, 0.5, 0.1)
+print(p3)
+points = [p1, p2, p3]
+print(points)
 
 names = ["Vito", "Sonny", "Tom", "Michael"]
 print(names)
