@@ -5,3 +5,5 @@
 !*.*
 ! LICENSE
 !src/*.*
+
+__pycache__/*

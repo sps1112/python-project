@@ -43,17 +43,3 @@ def showcase_list():
 def calculate_eq(a, b, c):
     d = a + b * c
     return d
-
-
-print("LIST: ")
-showcase_list()
-print("")
-
-print("TUPLE: ")
-a = int(input("Number1: "))
-b = int(input("Number2: "))
-showcase_tuple(a, b)
-print("")
-
-print("EQUATION: ")
-print(calculate_eq(1, 2, 3))
