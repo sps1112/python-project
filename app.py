@@ -1,14 +1,4 @@
-import includes.standard_lib as lib
+import includes.game as gm
 
-print("LIST: ")
-lib.showcase_list()
-print("")
 
-print("TUPLE: ")
-a = int(input("Number1: "))
-b = int(input("Number2: "))
-lib.showcase_tuple(a, b)
-print("")
-
-print("EQUATION: ")
-print(lib.calculate_eq(1, 2, 3))
+gm.initialize("Fantasy Land")

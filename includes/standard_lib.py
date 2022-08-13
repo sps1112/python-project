@@ -1,7 +1,7 @@
 from math import *
 
 
-def showcase_tuple(a, b):
+def showcase_tuple(a, b):  # Showcases example function for tuples
     p1 = (a, b)
     p2 = (3, 4)
     print(p1)
@@ -13,7 +13,7 @@ def showcase_tuple(a, b):
     print(points)
 
 
-def showcase_list():
+def showcase_list():  # Showcases example function for lists
     names = ["Vito", "Sonny", "Tom", "Michael"]
     print(names)
     print(len(names))
@@ -40,6 +40,10 @@ def showcase_list():
     print(names)
 
 
-def calculate_eq(a, b, c):
-    d = a + b * c
-    return d
+def showcase_dictionary():  # Showcases example function for dictionaries
+    options = {
+        "A": "New Game",
+        "B": "Options",
+        "C": "Quit"
+    }
+    print(options["B"])
