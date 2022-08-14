@@ -20,9 +20,27 @@ def show_main_menu():  # Shows the possible options in a game
     print("3. Quit")
 
 
+def print_player_data(path):  # Prints the player data
+    player_data = open(path, "r")
+    if player_data.readable():
+        print(player_data.read())
+    player_data.close()
+
+
+def save_player_data(path):  # Saves the local data to player file
+    player_data = open(path, "r")
+    new_data = open(path+".backup", "w")
+    if player_data.readable():
+        for data in player_data.readlines():
+            new_data.write(data)
+    new_data.close()
+    player_data.close()
+
+
 def show_game():  # Runs the game window
     print("Game Started!")
     print("")
+    print_player_data("data/player.txt")
     to_run = True
     while to_run:
         print("1. Play")
@@ -32,6 +50,7 @@ def show_game():  # Runs the game window
         if choice == 1:
             print("Running...")
         else:
+            save_player_data("data/player.txt")
             print("Quitting to main menu...")
             to_run = False
         print("")

@@ -1,0 +1,6 @@
+Name - Magus
+HP - 50
+Attack - 10
+Defence - 8
+Speed - 10
+Exp - 0
