@@ -29,7 +29,7 @@ def print_player_data(path):  # Prints the player data
 
 def save_player_data(path):  # Saves the local data to player file
     player_data = open(path, "r")
-    new_data = open(path+".backup", "w")
+    new_data = open(path + ".backup", "w")
     if player_data.readable():
         for data in player_data.readlines():
             new_data.write(data)
